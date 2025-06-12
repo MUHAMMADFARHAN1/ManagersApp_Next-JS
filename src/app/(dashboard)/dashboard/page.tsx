@@ -45,6 +45,9 @@ export default async function page() {
                 {challenges.category}
               </TableCell>
               <TableCell className="font-medium">{challenges.level}</TableCell>
+              <TableCell className="font-medium">
+                {challenges.createdAt}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

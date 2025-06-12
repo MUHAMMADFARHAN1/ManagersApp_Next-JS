@@ -38,14 +38,21 @@ export default async function page() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          <TableRow>
-            <TableCell className="font-medium">INV001</TableCell>
-            <TableCell>Paid</TableCell>
-            <TableCell>Credit Card</TableCell>
-            <TableCell className="text-right">$250.00</TableCell>
-          </TableRow>
+          {challenges.map((challenges: any) => (
+            <TableRow>
+              <TableCell className="font-medium">{challenges.title}</TableCell>
+              <TableCell className="font-medium">
+                {challenges.category}
+              </TableCell>
+              <TableCell className="font-medium">{challenges.level}</TableCell>
+            </TableRow>
+          ))}
         </TableBody>
       </Table>
     </div>
   );
 }
+
+// {
+//   projects.map((project) => <li key={project.id}>{project.name}</li>);
+// }

@@ -25,7 +25,6 @@ export default async function page() {
   console.log(challenges);
   return (
     <div>
-      <Menu />
       <Table>
         <TableCaption>Your challenges list</TableCaption>
         <TableHeader>

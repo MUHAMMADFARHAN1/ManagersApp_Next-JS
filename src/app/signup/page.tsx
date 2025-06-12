@@ -54,7 +54,7 @@ export default function page() {
       </form>
       <div>
         <p>
-          Already have an account? <Link href="/login">Login</Link>
+          Already have an account? <Link href="/">Login</Link>
         </p>
       </div>
     </div>

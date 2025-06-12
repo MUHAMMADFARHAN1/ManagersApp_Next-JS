@@ -11,7 +11,18 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-export default function page() {
+export async function getChallenges() {
+  const res = await fetch("http://localhost:2000/challenges");
+  const posts = await res.json();
+
+  return posts;
+}
+
+//https://nextjs.org/docs/app/guides/migrating/app-router-migration#step-6-migrating-data-fetching-methods
+
+export default async function page() {
+  const challenges = await getChallenges();
+  console.log(challenges);
   return (
     <div>
       <Menu />

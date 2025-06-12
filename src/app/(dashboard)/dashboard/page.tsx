@@ -41,11 +41,11 @@ export default async function page() {
           {challenges.map((challenges: any) => (
             <TableRow>
               <TableCell className="font-medium">{challenges.title}</TableCell>
-              <TableCell className="font-medium">
+              <TableCell className="font-light">
                 {challenges.category}
               </TableCell>
-              <TableCell className="font-medium">{challenges.level}</TableCell>
-              <TableCell className="font-medium">
+              <TableCell className="font-light">{challenges.level}</TableCell>
+              <TableCell className="font-light">
                 {challenges.createdAt}
               </TableCell>
             </TableRow>

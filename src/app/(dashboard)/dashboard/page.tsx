@@ -57,6 +57,16 @@ export default async function page() {
                 <TableCell className="font-light">
                   {challenges.createdAt}
                 </TableCell>
+                <TableCell className="font-light">
+                  <div className="flex flex-row gap-2">
+                    <Button>
+                      <Edit />
+                    </Button>
+                    <Button>
+                      <Trash2 />
+                    </Button>
+                  </div>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
